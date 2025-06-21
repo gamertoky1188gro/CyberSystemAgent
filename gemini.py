@@ -40,7 +40,7 @@ def selector(options=None):
                 return selected
 
 # Initialize Gemini client
-client = genai.Client(api_key="AIzaSyCtIdp1f2SRlvRMwxbmeY_PvQBA3t5heAs")
+client = genai.Client(api_key="API")
 
 def send(fileUpload=False, file="gemini.py", content="Can you tell me about the instruments in this photo?", modelindex=None):
     # Get model names
