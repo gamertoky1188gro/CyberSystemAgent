@@ -195,6 +195,54 @@ keyboard.s("Hello!")
 - To use TTS for AI reply, set `var = True` at line 484 in `really main.py`.
 - If you want to use the GUI to print messages, set `var = False` at line 484 in `really main.py`.
 
+## Upcoming Features
+
+1. Bug fixes
+2. Hot word support
+3. More advanced replies
+4. Filtering
+5. Local AI support
+6. Storage optimization
+7. Additional features
+8. GUI-based enhancements
+9. More command-line options
+10. Optimized speed
+11. And more...
+
+## Contributing
+
+We welcome contributions! To contribute:
+- Fork the repository and create a new branch for your feature or bugfix.
+- Follow PEP8 coding style for Python code.
+- Test your changes before submitting a pull request.
+- Open an issue for major changes or feature requests before starting work.
+- Submit a pull request with a clear description of your changes.
+
+## FAQ
+
+**Q: I get a torch or package version error during setup. What should I do?**
+A: Remove torch from the requirements file and install a compatible version manually. If you have issues with other packages, try removing version pins (==<ver>) and reinstalling.
+
+**Q: How do I switch between using Whisper and input mode?**
+A: Edit `really main.py` at line 175. Set `var2 = True` for Whisper, or `var2 = False` for input.
+
+**Q: How do I use TTS for AI replies or GUI output?**
+A: Edit `really main.py` at line 484. Set `var = True` for TTS, or `var = False` for GUI output.
+
+**Q: The GUI window does not show the logo or crashes.**
+A: Make sure `1.png` exists in the project directory.
+
+**Q: How do I select a different Whisper model?**
+A: When running `main.py`, use the arrow keys to select a model in the CLI.
+
+## Performance Tips
+
+- For best performance, use a CUDA-enabled GPU (if available) for Whisper STT.
+- Use the smallest Whisper model that meets your accuracy needs to reduce memory and speed requirements.
+- For TTS, use the Python 3.10 environment as XTTS is more stable and compatible there.
+- If you encounter memory issues, try reducing the model size or input length.
+- Keep your dependencies up to date for bug fixes and performance improvements.
+
 ## License
 
 This project is for educational and personal use. See individual model licenses for details.
